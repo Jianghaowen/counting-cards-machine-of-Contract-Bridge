@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>桥牌记牌器（counting cards machine of Contract Bridge）</title>
+<meta http-eqiuv="content-type" content="text/html;charset=utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="pai13">
+<div class="pai10" id="pai11">
+  <div class="pai12">已经知道的牌（Already know cards）</div>
+  <div class="pai1">
+  <div class="pai2">黑桃(Spade)</div>
+ <div class="pai3" id="pai5">
+  <a class="pai" href="javascript:;" name="s">2</a>
+  <a class="pai" href="javascript:;" name="s">3</a>
+  <a class="pai" href="javascript:;" name="s">4</a>
+  <a class="pai" href="javascript:;" name="s">5</a>
+  <a class="pai" href="javascript:;" name="s">6</a>
+  <a class="pai" href="javascript:;" name="s">7</a>
+  <a class="pai" href="javascript:;" name="s">8</a>
+  <a class="pai" href="javascript:;" name="s">9</a>
+  <a class="pai" href="javascript:;" name="s">10</a>
+  <a class="pai" href="javascript:;" name="s">J</a>
+  <a class="pai" href="javascript:;" name="s">Q</a>
+  <a class="pai" href="javascript:;" name="s">K</a>
+  <a class="pai" href="javascript:;" name="s">A</a>
+  <a class="pai4" href="javascript:;" id="5">reset</a>
+  </div>
+  </div>
+    <div class="pai1">
+  <div class="pai2">红桃(heart)</div>
+   <div class="pai3" id="pai6">
+  <a class="pai" href="javascript:;" name="h">2</a>
+  <a class="pai" href="javascript:;" name="h">3</a>
+  <a class="pai" href="javascript:;" name="h">4</a>
+  <a class="pai" href="javascript:;" name="h">5</a>
+  <a class="pai" href="javascript:;" name="h">6</a>
+  <a class="pai" href="javascript:;" name="h">7</a>
+  <a class="pai" href="javascript:;" name="h">8</a>
+  <a class="pai" href="javascript:;" name="h">9</a>
+  <a class="pai" href="javascript:;" name="h">10</a>
+  <a class="pai" href="javascript:;" name="h">J</a>
+  <a class="pai" href="javascript:;" name="h">Q</a>
+  <a class="pai" href="javascript:;" name="h">K</a>
+  <a class="pai" href="javascript:;" name="h">A</a>
+  <a class="pai4" href="javascript:;" id="6">reset</a>
+  </div>
+  </div>
+    <div class="pai1">
+  <div class="pai2">方块(diamond)</div>
+   <div>
+  <div class="pai3" id="pai7">
+  <a class="pai" href="javascript:;" name="d">2</a>
+  <a class="pai" href="javascript:;" name="d" >3</a>
+  <a class="pai" href="javascript:;" name="d">4</a>
+  <a class="pai" href="javascript:;" name="d">5</a>
+  <a class="pai" href="javascript:;" name="d">6</a>
+  <a class="pai" href="javascript:;" name="d">7</a>
+  <a class="pai" href="javascript:;" name="d">8</a>
+  <a class="pai" href="javascript:;" name="d">9</a>
+  <a class="pai" href="javascript:;" name="d">10</a>
+  <a class="pai" href="javascript:;" name="d">J</a>
+  <a class="pai" href="javascript:;" name="d">Q</a>
+  <a class="pai" href="javascript:;" name="d">K</a>
+  <a class="pai" href="javascript:;" name="d">A</a>
+  <a class="pai4" href="javascript:;" id="7">reset</a>
+  </div>
+  </div>
+  </div>
+    <div class="pai1">
+  <div class="pai2">梅花(Club)</div>
+ <div class="pai3" id="pai8">
+  <a class="pai" href="javascript:;" name="c">2</a>
+  <a class="pai" href="javascript:;" name="c">3</a>
+  <a class="pai" href="javascript:;" name="c">4</a>
+  <a class="pai" href="javascript:;" name="c">5</a>
+  <a class="pai" href="javascript:;" name="c">6</a>
+  <a class="pai" href="javascript:;" name="c">7</a>
+  <a class="pai" href="javascript:;" name="c">8</a>
+  <a class="pai" href="javascript:;" name="c">9</a>
+  <a class="pai" href="javascript:;" name="c">10</a>
+  <a class="pai" href="javascript:;" name="c">J</a>
+  <a class="pai" href="javascript:;" name="c">Q</a>
+  <a class="pai" href="javascript:;" name="c">K</a>
+  <a class="pai" href="javascript:;" name="c">A</a>
+  <a class="pai4" href="javascript:;" id="8">reset</a>
+  </div>
+  </div>
+  </div>
+  <div class="pai10">
+  <div class="pai12">剩余的牌（The rest cards）</div>
+  <div class="pai1">
+  <div class="pai2">黑桃(Spade)</div>
+ <div class="pai3" id="pa5">
+  <a class="pai" href="javascript:;" id="s2">2</a>
+  <a class="pai" href="javascript:;" id="s3">3</a>
+  <a class="pai" href="javascript:;" id="s4">4</a>
+  <a class="pai" href="javascript:;" id="s5">5</a>
+  <a class="pai" href="javascript:;" id="s6">6</a>
+  <a class="pai" href="javascript:;" id="s7">7</a>
+  <a class="pai" href="javascript:;" id="s8">8</a>
+  <a class="pai" href="javascript:;" id="s9">9</a>
+  <a class="pai" href="javascript:;" id="s10">10</a>
+  <a class="pai" href="javascript:;" id="sJ">J</a>
+  <a class="pai" href="javascript:;" id="sQ">Q</a>
+  <a class="pai" href="javascript:;" id="sK">K</a>
+  <a class="pai" href="javascript:;" id="sA">A</a>
+  </div>
+  </div>
+    <div class="pai1">
+  <div class="pai2">红桃(heart)</div>
+   <div class="pai3" id="pa6">
+  <a class="pai" href="javascript:;" id="h2">2</a>
+  <a class="pai" href="javascript:;" id="h3">3</a>
+  <a class="pai" href="javascript:;" id="h4">4</a>
+  <a class="pai" href="javascript:;" id="h5">5</a>
+  <a class="pai" href="javascript:;" id="h6">6</a>
+  <a class="pai" href="javascript:;" id="h7">7</a>
+  <a class="pai" href="javascript:;" id="h8">8</a>
+  <a class="pai" href="javascript:;" id="h9">9</a>
+  <a class="pai" href="javascript:;" id="h10">10</a>
+  <a class="pai" href="javascript:;" id="hJ">J</a>
+  <a class="pai" href="javascript:;" id="hQ">Q</a>
+  <a class="pai" href="javascript:;" id="hK">K</a>
+  <a class="pai" href="javascript:;" id="hA">A</a>
+  </div>
+  </div>
+    <div class="pai1">
+  <div class="pai2">方块(diamond)</div>
+   <div>
+  <div class="pai3" id="pa7">
+  <a class="pai" href="javascript:;" id="d2">2</a>
+  <a class="pai" href="javascript:;" id="d3">3</a>
+  <a class="pai" href="javascript:;" id="d4">4</a>
+  <a class="pai" href="javascript:;" id="d5">5</a>
+  <a class="pai" href="javascript:;" id="d6">6</a>
+  <a class="pai" href="javascript:;" id="d7">7</a>
+  <a class="pai" href="javascript:;" id="d8">8</a>
+  <a class="pai" href="javascript:;" id="d9">9</a>
+  <a class="pai" href="javascript:;" id="d10">10</a>
+  <a class="pai" href="javascript:;" id="dJ">J</a>
+  <a class="pai" href="javascript:;" id="dQ">Q</a>
+  <a class="pai" href="javascript:;" id="dK">K</a>
+  <a class="pai" href="javascript:;" id="dA" >A</a>
+  </div>
+  </div>
+  </div>
+    <div class="pai1">
+  <div class="pai2">梅花(Club)</div>
+ <div class="pai3" id="pa8">
+  <a class="pai" href="javascript:;" id="c2">2</a>
+  <a class="pai" href="javascript:;" id="c3">3</a>
+  <a class="pai" href="javascript:;" id="c4">4</a>
+  <a class="pai" href="javascript:;" id="c5">5</a>
+  <a class="pai" href="javascript:;" id="c6">6</a>
+  <a class="pai" href="javascript:;" id="c7">7</a>
+  <a class="pai" href="javascript:;" id="c8">8</a>
+  <a class="pai" href="javascript:;" id="c9">9</a>
+  <a class="pai" href="javascript:;" id="c10">10</a>
+  <a class="pai" href="javascript:;" id="cJ">J</a>
+  <a class="pai" href="javascript:;" id="cQ">Q</a>
+  <a class="pai" href="javascript:;" id="cK">K</a>
+  <a class="pai" href="javascript:;" id="cA">A</a>
+  </div>
+  </div>
+  </div>
+  <a class="pai5">all reset</a>
+  </div>
+<script>
+ $(".pai").click(
+    function(){
+			   $(this).toggleClass("pai9");
+			   var  id=$(this).text();
+			   var  id1=$(this).attr("name");
+			   var  id2=id1+id
+			   $("#"+id2).toggle();	   
+    });
+  $(".pai4").click(
+    function(){
+			 var id=$(this).attr("id");
+			 $("#pai"+id).find('a').removeClass("pai9");
+    });
+	 $(".pai4").click(
+    function(){
+			 var id=$(this).attr("id");
+			 $("#pa"+id).find('a').css("display","inline-block");	
+    });
+	  $(".pai5").click(
+    function(){
+			 $("a").removeClass("pai9");
+			 $('a').css("display","inline-block");
+    });
+</script>	  
+</body>
+</html>
