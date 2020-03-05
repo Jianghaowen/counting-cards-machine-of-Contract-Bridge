@@ -9,7 +9,7 @@
 </head>
 <body>
 <div id="pai13">
-<div class="pai10" id="pai11">
+<center class="pai10">
   <div class="pai12">已经知道的牌（Already know cards）</div>
   <div class="pai1">
   <div class="pai2">黑桃(Spade)</div>
@@ -89,8 +89,8 @@
   <a class="pai4" href="javascript:;" id="8">reset</a>
   </div>
   </div>
-  </div>
-  <div class="pai10">
+  </center>
+  <center class="pai10">
   <div class="pai12">剩余的牌（The rest cards）</div>
   <div class="pai1">
   <div class="pai2">黑桃(Spade)</div>
@@ -166,8 +166,10 @@
   <a class="pai" href="javascript:;" id="cA">A</a>
   </div>
   </div>
-  </div>
-  <a class="pai5">all reset</a>
+  </center>
+  <center class = "reset">
+      <a class="pai5">all reset</a>
+  </center>
   </div>
 <script>
  $(".pai").click(
@@ -175,18 +177,13 @@
 			   $(this).toggleClass("pai9");
 			   var  id=$(this).text();
 			   var  id1=$(this).attr("name");
-			   var  id2=id1+id
-			   $("#"+id2).toggle();	   
+			   $("#"+id1+id).toggle();	   
     });
   $(".pai4").click(
     function(){
 			 var id=$(this).attr("id");
 			 $("#pai"+id).find('a').removeClass("pai9");
-    });
-	 $(".pai4").click(
-    function(){
-			 var id=$(this).attr("id");
-			 $("#pa"+id).find('a').css("display","inline-block");	
+			 $("#pa"+id).find('a').css("display","inline-block");
     });
 	  $(".pai5").click(
     function(){

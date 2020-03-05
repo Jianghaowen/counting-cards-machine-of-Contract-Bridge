@@ -1,6 +1,6 @@
 .pai {
 	  display:inline-block;
-   	  width:16px;
+   	  width:21px;
 	  height:18px;
 	  border:1px solid black;
 	  text-align:center;
@@ -9,12 +9,14 @@
 	  margin-left:15px;
 	  color:#333;
 }
+@media screen and (max-width: 640px) {
+	.pai {
+		margin-top: 2%;
+	}
+}
 .pai:hover {
 	        color:white;
 			background:blue;
-}
-.pai1 {
-	   white-space:nowrap;	   
 }
 *{
   margin:0;
@@ -64,17 +66,13 @@
 	   background:blue;
 }
 .pai10 {
-	    float:left;
 		border:1px solid #E8E8E8;
 		background:#E0FFFF;
-		margin-top:30px;
-}
-#pai11{
-	   margin-right:30px;
+		margin-top : 2%;
 }
 .pai12 {
 	    margin-bottom:8px;
 }
-#pai13 {
-	    margin-top:10px;
+.reset {
+	margin-top: 1%;
 }
