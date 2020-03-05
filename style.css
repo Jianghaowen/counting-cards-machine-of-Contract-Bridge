@@ -1,6 +1,6 @@
 .pai {
 	  display:inline-block;
-   	  width:21px;
+   	  width:22px;
 	  height:18px;
 	  border:1px solid black;
 	  text-align:center;
@@ -8,6 +8,7 @@
 	  font-style:normal;
 	  margin-left:15px;
 	  color:#333;
+	  padding-bottom: 2px;
 }
 @media screen and (max-width: 640px) {
 	.pai {
@@ -30,32 +31,14 @@
 	   margin-bottom:10px;
 }
 .pai4 {
-	      display:inline-block;
-   	      width:40px;
-		  height:18px;
-		  border:1px solid black;
-		  text-align:center;
-		  text-decoration:none;
-		  font-style:normal;
-		  margin-left:15px;
-		  color:#333;
+   	      width:42px;
 }
 .pai4:hover {
 	         color:white;
 			 background:blue;
 }
 .pai5 {
-	      display:inline-block;
    	      width:65px;
-		  height:18px;
-		  border:1px solid black;
-		  text-align:center;
-		  text-decoration:none;
-		  font-style:normal;
-		  margin-left:15px;
-		  color:#333;
-		  cursor:pointer;
-		  margin-top:5px;
 }
 .pai5:hover {
 	         color:white;
