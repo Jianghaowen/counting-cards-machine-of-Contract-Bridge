@@ -1,4 +1,4 @@
-# counting-cards-machine-of-Contract-Bridge
+# counting-cards-machine-of-Contract-Bridge(桥牌记牌器)
 
 ## English
 桥牌记牌器（counting cards machine of Contract Bridge）           
