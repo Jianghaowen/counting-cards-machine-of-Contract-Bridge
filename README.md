@@ -8,7 +8,10 @@ you can reset the card or just click  card again to cancel.
 
 
 You can find effect by below web address.      
-http://jianghaowen.com/jipaiqi/
+http://jianghaowen.com/jipaiqi/               
+If you have any question , you can contact email below.                 
+534878350@qq.com
+
 
 ## 中文
 桥牌记牌器（counting cards machine of Contract Bridge） 这是一个桥牌记牌器，你可以在“已经知道的牌”的位置标记你已经知道的牌，没有出现的牌会在剩余的牌中显示出来。                  
@@ -17,7 +20,9 @@ http://jianghaowen.com/jipaiqi/
 
 
 你能发现效果在下面的网址。              
-http://jianghaowen.com/jipaiqi/
+http://jianghaowen.com/jipaiqi/             
+有任何问题可联系邮箱               
+534878350@qq.com
 
 
 
