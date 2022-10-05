@@ -20,7 +20,7 @@ If you have any question , you can contact email below.
 
 
 你能发现效果在下面的网址。              
-http://jianghaowen.com/jipaiqi/             
+https://jianghaowen.github.io/jipaiqi     
 有任何问题可联系邮箱               
 534878350@qq.com
 
