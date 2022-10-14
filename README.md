@@ -8,7 +8,7 @@ you can reset the card or just click  card again to cancel.
 
 
 You can find effect by below web address.      
-http://jianghaowen.com/jipaiqi/               
+https://jianghaowen.github.io/jipaiqi                
 If you have any question , you can contact email below.                 
 534878350@qq.com
 
